@@ -1,8 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -73,5 +76,18 @@ public class Main {
                 System.out.print(arraysRandom[i] + ", ");
             }
         }
+    }
+
+    public static void task4() {
+        System.out.println();
+        System.out.println();
+        System.out.println("Задача 4");
+        int[] arraysInt = {10, 15, 25, 13, 17, 18, 22, 98, 1023};
+        for (int i = 0; i < arraysInt.length; i++) {
+            if (arraysInt[i] % 2 != 0) {
+                arraysInt[i] += 1;
+            }
+        }
+        System.out.println(Arrays.toString(arraysInt));
     }
 }
